@@ -1,0 +1,11 @@
+image: cirrusci/flutter:3.0.5
+options:
+  max-time: 120
+pipelines:
+  branches:
+    master:
+      - step:
+          name: Publish
+          script:
+            - flutter pub get
+            - dart pub publish --force

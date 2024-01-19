@@ -1,0 +1,27 @@
+name: flutter_multiple_webview_plugin
+description: Plugin that allow Flutter to communicate with a multiple native Webviews.
+authors:
+- Peter Rozkošný <peter.rozkosny@powerplay.studio>
+- Matej Snovák <matej.snovak@powerplay.studio>
+version: 1.0.11
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+  flutter: ">=2.0.0"
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.flutter_multiple_webview_plugin
+        pluginClass: FlutterMultipleWebviewPlugin
+      ios:
+        pluginClass: FlutterMultipleWebviewPlugin
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  mocktail: ^0.1.1
+  flutter_test:
+    sdk: flutter
